@@ -138,7 +138,6 @@ section#stories-container{
     background-image: url(../img/people.png);
     background-position: center center;
     background-size: 55px;
-    object-fit: center;
 }
 
 .story-paragraph{
@@ -870,8 +869,6 @@ section#profile-container section#forU.tab-active{
     }
 
     /* ############################ */
-
-    /*  */
 
     nav.downside-menu{
         display: none;
