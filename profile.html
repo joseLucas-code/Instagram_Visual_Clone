@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Instagram Visual Clone</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="lucas">
+    <meta name="description" content="Clone visual Instagram">
+    <meta name=keywords content="projeto,pratico,iniciante,html,css,js">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="favicon_io/apple-touch-icon.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="profile-main-header">
+        <div class="center-content">
+            <i class="fas fa-cog"></i>
+            <h1>Username</h1>
+
+            <figure class="logo">
+                <a href="index.html">
+                    <img src="img/Instagram-Logo.png" alt="instagram logo">
+                </a>
+            </figure><!--## LOGO ##-->
+
+            <form class="main-search">
+                <input type="text" placeholder="Pesquisar" id="search-input">
+            </form><!--## MAIN SEARCH ##-->
+
+            <nav class="desktop-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-messenger"></i>
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-compass"></i>
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="profile.html">
+                            <span class="profile-img"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav><!--## DOWNSIDE MENU ##-->
+            <i class="fas fa-user-plus"></i>
+        </div><!--## CENTER CONTENT ##-->
+    </header><!--## PROFILE HEADER ##-->
+
+    <main id="profile-page">
+        <div class="center-content">
+            <section id="profile-container">
+
+                <div class="profile-mobile">
+                    <header class="profile-mobile-header">
+                        <figure class="profile-img">
+                            <img src="img/unnamed.jpg" alt="PROFILE IMG">
+                        </figure><!--## PROFILE IMAGE ##-->
+
+                        <div class="profile-id">
+                            <h2>Username_id</h2>
+                            <button>Editar perfil</button>
+                        </div><!--## PROFILE INFO ##-->
+                    </header><!--## PROFILE SUB HEADER ##-->
+
+                    <div class="profile-bio">
+                        <p>Username</p>
+                        <P>Lorem ipsum dolor sit amet</P>
+                    </div><!--## PROFILE BIO ##-->
+
+                    <div class="profile-info">
+                        <ul>
+                            <li>
+                                <span class="numbers">5</span>
+                                <span class="info">publicações</span>
+                            </li>
+                            <li>
+                                <span class="numbers">1.2 MI</span>
+                                <span class="info">seguidores</span>
+                            </li>
+                            <li>
+                                <span class="numbers">500</span>
+                                <span class="info">seguindo</span>
+                            </li>
+                        </ul>
+                    </div><!--## PROFILE INFO ##-->
+                </div><!--## PROFILE MOBILE ##-->
+
+                <div class="profile-desktop">
+                    <header class="profile-desktop-header">
+                        <figure class="profile-img">
+                            <img src="img/unnamed.jpg" alt="PROFILE IMG">
+                        </figure><!--## PROFILE IMAGE ##-->
+
+                        <div class="profile-all-info-flex">
+
+                            <div class="profile-id">
+                                <h2>Username_id</h2>
+                                <button>Editar perfil</button>
+                            </div><!--## PROFILE INFO ##-->
+        
+                            <div class="profile-info">
+                                <ul>
+                                    <li>
+                                        <span class="numbers">5</span>
+                                        <span class="info">publicações</span>
+                                    </li>
+                                    <li>
+                                        <span class="numbers">1.2 MI</span>
+                                        <span class="info">seguidores</span>
+                                    </li>
+                                    <li>
+                                        <span class="numbers">500</span>
+                                        <span class="info">seguindo</span>
+                                    </li>
+                                </ul>
+                            </div><!--## PROFILE INFO ##-->
+
+                            <div class="profile-bio">
+                                <p>Username</p>
+                                <P>Lorem ipsum dolor sit amet</P>
+                            </div><!--## PROFILE BIO ##-->
+                        </div><!--## PROFILE ALL INFO FLEXBOX ##-->
+                    </header><!--## PROFILE SUB HEADER ##-->
+
+                    
+                </div><!--## PROFILE DESKTOP ##-->
+
+                <div class="profile-tabs">
+                    <i class="fas fa-th js-tab active"></i>
+                    <i class="far fa-square js-tab"></i>
+                    <i class="far fa-bookmark js-tab"></i>
+                    <i class="far fa-user-circle js-tab"></i>
+                </div><!--## PROFILE TABS ##-->
+
+                <section id="grid" class="tab-active">
+                    <figure class="user-photo">
+                        <img src="img/people.png" alt="photo">
+                    </figure><!--## USER PHOTO ##-->
+
+                    <figure class="user-photo">
+                        <img src="img/people.png" alt="photo">
+                    </figure><!--## USER PHOTO ##-->
+
+                    <figure class="user-photo">
+                        <img src="img/people.png" alt="photo">
+                    </figure><!--## USER PHOTO ##-->
+
+                    <figure class="user-photo">
+                        <img src="img/people.png" alt="photo">
+                    </figure><!--## USER PHOTO ##-->
+                </section><!--## GRID ##-->
+                
+                <section id="list">
+
+                    <article class="post-single">
+
+                        <header class="post-header">
+
+                            <div class="post-profile">
+                                <div class="profile-img"></div>
+                                <h2 class="profile-name">Lorem Ipsum</h2>
+                            </div><!--## POST PROFILE##-->
+
+                            <i class="fas fa-ellipsis-h post-menu"></i>
+
+                        </header><!--## POST HEADER ##-->
+
+                        <figure class="post-img"></figure>
+
+                        <div class="interact-container">
+                            <div class="like-container">
+                                <i class="far fa-heart js-like"></i>
+                                <i class="far fa-comment"></i>
+                                <i class="fas fa-location-arrow"></i>
+                            </div><!--## LIKE CONTAINER ##-->
+
+                            <div class="bookmark">
+                                <i class="far fa-bookmark"></i>
+                            </div><!--## BOOKMARK ##-->
+                        </div><!--## INTERACT CONTAINER ##-->
+
+                        <div class="comments-container">
+                            <div class="likes-scores">
+                                <p>Curtido por <span class="profile">Lorem Ipsum</span> e <span class="peoples-likes"> outras <span class="peoples-count">500</span> pessoas</span></p>
+                            </div><!--## LIKES SCORES ##-->
+
+                            <div class="post-subtitle">
+                                <p><span class="profile-name">Lorem Ipsum</span> Lorem ipsum Dolor sit</p>
+                            </div><!--## POST SUBTITLE ##-->
+
+                            <span class="post-ago">Há 10 Horas</span>
+                        </div><!--## COMMENTS CONTAINER ##-->
+
+                    </article><!--## POST SINGLE ##-->
+
+                    <article class="post-single">
+
+                        <header class="post-header">
+
+                            <div class="post-profile">
+                                <div class="profile-img"></div>
+                                <h2 class="profile-name">Lorem Ipsum</h2>
+                            </div><!--## POST PROFILE##-->
+
+                            <i class="fas fa-ellipsis-h post-menu"></i>
+
+                        </header><!--## POST HEADER ##-->
+
+                        <figure class="post-img"></figure>
+
+                        <div class="interact-container">
+                            <div class="like-container">
+                                <i class="far fa-heart js-like"></i>
+                                <i class="far fa-comment"></i>
+                                <i class="fas fa-location-arrow"></i>
+                            </div><!--## LIKE CONTAINER ##-->
+
+                            <div class="bookmark">
+                                <i class="far fa-bookmark"></i>
+                            </div><!--## BOOKMARK ##-->
+                        </div><!--## INTERACT CONTAINER ##-->
+
+                        <div class="comments-container">
+                            <div class="likes-scores">
+                                <p>Curtido por <span class="profile">Lorem Ipsum</span> e <span class="peoples-likes"> outras <span class="peoples-count">400</span> pessoas</span></p>
+                            </div><!--## LIKES SCORES ##-->
+
+                            <div class="post-subtitle">
+                                <p><span class="profile-name">Lorem Ipsum</span> Lorem ipsum Dolor sit</p>
+                            </div><!--## POST SUBTITLE ##-->
+
+                            <span class="post-ago">Há 10 Horas</span>
+                        </div><!--## COMMENTS CONTAINER ##-->
+
+                    </article><!--## POST SINGLE ##-->
+                </section><!--## LIST ##-->
+
+                <section id="bookmark" >
+                    <h3>Somente você pode ver isso!</h3>
+
+                    <i class="far fa-bookmark"></i>
+                    <p>Nada aqui!</p>
+
+                </section><!--## BOOKMARK ##-->
+
+                <section id="forU">
+                    <i class="far fa-user-circle"></i>
+                    <h3>Fotos com você</h3>
+                    <p>Quando as pessoas marcarem você em fotos, elas aparecerão aqui.</p>
+                </section><!--## FOR YOU ##-->
+            </section><!--## MAIN PROFILE ##-->
+        </div><!--## CENTER CONTENT ##-->
+    </main>
+
+    <nav class="downside-menu">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class="fas fa-home"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fas fa-plus"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fas fa-heart"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <span class="profile-img"></span>
+                </a>
+            </li>
+        </ul>
+    </nav><!--## DOWNSIDE MENU ##-->
+
+    <script src="js/profile.js"></script>
+</body>
+</html>
