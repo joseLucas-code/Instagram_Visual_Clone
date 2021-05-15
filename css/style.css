@@ -151,7 +151,7 @@ section#posts-container{
 }
 
 article.post-single{
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     border-radius: 1px;
 }
 
@@ -257,7 +257,7 @@ figure.post-img{
 }
 
 .post-ago{
-    margin-top: 50px;
+    margin-top: 15px;
     display: block;
     font-size: .7rem;
     color: gray;
