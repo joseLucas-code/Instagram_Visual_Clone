@@ -277,39 +277,39 @@ nav.downside-menu{
     left: 0;
     width: 100%;
     background: #fff;
-    border-top: var(--border-bottom)
+    border-top: var(--border-bottom);
+    
 }
 
 nav.downside-menu ul{
     display: flex;
     align-items: center;
+    justify-content: center;
     list-style: none;
+    
 }
 
 nav.downside-menu ul li{
-    flex: 1 1 45px;
-    text-align: center;
-    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav.downside-menu ul li a {
     color: #000;
-    display: block;
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-size: 1.4rem;
     padding: 5px 0;
-}
-
-nav.downside-menu ul li a i.fa-plus{
-    padding: 3px 4px;
-    border-radius: 5px;
-    border: 1px solid black;
-    font-size: .95rem;
+    flex: 1;
+    text-align: center;
+    max-height: 39px;
 }
 
 nav.downside-menu ul li a .profile-img{
     display: inline-block;
     width: 25px;
     height: 25px;
+    margin-top: 2px;
     background-image: url('../img/unnamed.jpg');
     background-position: center 0;
     border-radius: 50%;
