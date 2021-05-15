@@ -79,16 +79,12 @@ section#stories-container{
     overflow: hidden;
 }
 
-
-
 .my-storie{
     display: flex;
     flex-flow: column nowrap;
     align-items: center; 
     cursor: pointer;
 }
-
-
 
 .my-storie .profile-img{
     width: 55px;
@@ -560,10 +556,13 @@ section#profile-container section#forU.tab-active{
 /* ############## */
 
 @media (min-width: 640px){
+    header#main-header .center-content{
+        padding: 5px 0;
+    }
     section#stories-container{
         border: var(--border-bottom);
         padding: 10px 15px;
-        margin: 90px 0 20px 0;
+        margin: 80px 0 20px 0;
     }
 
     article.post-single{
@@ -598,7 +597,6 @@ section#profile-container section#forU.tab-active{
         max-width: 960px;
     }
     
-    header#main-header .logo,
     header#profile-main-header .logo{
         margin-top: 5px;
     }
