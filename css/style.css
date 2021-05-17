@@ -53,10 +53,11 @@ header#main-header figure.logo a img{
     margin-top: 5px;
 }
 
-header#main-header .chat,
+header#main-header .chat a,
 header#main-header .camera{
     cursor: pointer;
-    font-size: clamp(1.3rem, 3vw, 1.7rem)
+    font-size: clamp(1.3rem, 3vw, 1.7rem);
+    color: black;
 }
 
 .main-search{
@@ -102,7 +103,7 @@ section#stories-container{
     border-radius: 50%;
     background: cyan;
     text-align: center;
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff;
 }
 
 .friend-story-single{
@@ -162,7 +163,7 @@ header.post-header{
     padding: 12px var(--post-padding-right) 12px var(--post-padding-left);
 }
 
-header.post-header .post-profile{
+.post-profile{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -178,13 +179,13 @@ header.post-header .post-profile{
     cursor: pointer;
 }
 
-.post-profile .profile-name{
+.profile-name{
     font-size: .9rem;
     font-weight: 600;
     cursor: pointer;
 }
 
-header.post-header .post-menu{
+.post-menu{
     font-size: .7rem;
     cursor: pointer;
     padding: 7px;
@@ -316,12 +317,10 @@ nav.downside-menu ul li a .profile-img{
 
 /* PROFILE PAGE STYLING */
 
-main#profile-page .center-content{
-    max-width: 960px;
-}
 
-header#profile-main-header{
-    padding: 12px 16px;
+
+header#main-header.profile{
+    padding: 5px 0;
     border: var(--border-bottom);
     position: fixed;
     top: 0;
@@ -331,25 +330,29 @@ header#profile-main-header{
     z-index: 10;
 }
 
-header#profile-main-header .center-content{
+header#main-header.profile .center-content{
     max-width: 960px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header#profile-main-header .logo{
+header#main-header.profile .logo{
     display: none;
 }
 
-header#profile-main-header i{
+header#main-header.profile i{
     font-size: clamp(1.2rem, 2vw, 1.5rem);
     cursor: pointer;
 }
 
-header#profile-main-header h1{
+header#main-header.profile h1{
     font-size: clamp(1rem, 1vw, 1.1rem);
     font-weight: normal;
+}
+
+main#profile-page .center-content{
+    max-width: 960px;
 }
 
 /* PROFILE INFO STYLING */
@@ -366,7 +369,7 @@ section#profile-container .profile-desktop{
 section#profile-container header.profile-mobile-header{
     width: 100%;
     display: flex;
-    gap: 20px;
+    gap: 25px;
     padding: 0 16px;
 }
 
@@ -397,7 +400,7 @@ section#profile-container .profile-id button{
 }
 
 section#profile-container .profile-bio{
-    margin-top: 15px;
+    margin-top: 20px;
     padding: 0 16px;
 }
 
@@ -554,6 +557,66 @@ section#profile-container section#forU.tab-active{
 
 /* ############## */
 
+/* DIRECT PAGE STYLING */
+
+header#main-header.direct i,
+header#main-header.direct a{
+    font-size: clamp(1.3rem, 2vw, 1.5rem);
+    cursor: pointer;
+    color: black;
+}
+
+header#main-header.direct .logo{
+    display: none;
+}
+
+.backward{
+    font-weight: normal;
+}
+
+.direct-msg{
+    font-size: .5rem;
+    font-weight: 300;
+    font-family: Arial,sans-serif,helvetica;
+}
+
+/* CHATS STYLING  */
+
+section#direct-chats-container{
+    margin-top: 53px;
+}
+
+article.chat-single{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding: 0 16px;
+}
+
+article.chat-single .profile-img{
+    width: 56px;
+    height: 56px;
+    background-image: url(../img/people.png);
+    background-size: 55px;
+    border-radius: 50%;
+}
+
+.chat-id-msg h3{
+    font-size: .9rem;
+    font-weight: normal;
+}
+
+.chat-id-msg p{
+    color: #8e8e8e;
+    font-size: .8rem;
+}
+
+
+
+/* ################### */
+
 @media (min-width: 640px){
     header#main-header .center-content{
         padding: 5px 0;
@@ -585,19 +648,27 @@ section#profile-container section#forU.tab-active{
         padding-bottom: 5px;
     }
 
+    section#profile-container section#grid{
+        gap: 15px;
+    }
+
     section#profile-container section#list figure.post-img{
         padding-top: 80%;
         background-color:rgba(105, 105, 105, 0.233);
     }
 }
 
+/* ##################################################################### */
+
+
 @media (min-width: 1024px){
     header#main-header .center-content{
         max-width: 960px;
     }
     
-    header#profile-main-header .logo{
-        margin-top: 5px;
+    header#main-header .logo{
+        margin-bottom: 15px;
+        height: 20px;
     }
     
     header#main-header .chat,
@@ -645,6 +716,10 @@ section#profile-container section#forU.tab-active{
         background-image: url('../img/unnamed.jpg');
         background-position: center 0;
         border-radius: 50%;
+    }
+
+    .my-storie{
+        display: none;
     }
 
     main .center-content{
@@ -765,12 +840,12 @@ section#profile-container section#forU.tab-active{
     }
 
     /* PROFILE PAGE DESKTOP STYLING */
-    header#profile-main-header .center-content > i,
-    header#profile-main-header .center-content > h1{
+    header#main-header.profile .center-content > i,
+    header#main-header.profile .center-content > h1{
         display: none;
     }
 
-    header#profile-main-header .logo{
+    header#main-header.profile .logo{
         display: block;
     }
 
@@ -865,7 +940,32 @@ section#profile-container section#forU.tab-active{
         border-bottom: none;
     }
 
+    section#profile-container section#grid{
+        gap: 25px;
+    }
+
     /* ############################ */
+
+    /* DIRECT PAGE STYLING */
+
+    header#main-header.direct .logo{
+        display: block;
+    }
+    
+    header#main-header.direct .backward{
+        display: none;
+    }
+    
+    header#main-header.direct .direct-msg{
+        display: none;
+    }
+
+    header#main-header.direct .create-msg{
+        display: none;
+    }
+
+
+    /* ################### */
 
     nav.downside-menu{
         display: none;
