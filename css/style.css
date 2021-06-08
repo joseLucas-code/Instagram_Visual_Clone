@@ -557,64 +557,6 @@ section#profile-container section#forU.tab-active{
 
 /* ############## */
 
-/* DIRECT PAGE STYLING */
-
-header#main-header.direct i,
-header#main-header.direct a{
-    font-size: clamp(1.3rem, 2vw, 1.5rem);
-    cursor: pointer;
-    color: black;
-}
-
-header#main-header.direct .logo{
-    display: none;
-}
-
-.backward{
-    font-weight: normal;
-}
-
-.direct-msg{
-    font-size: .5rem;
-    font-weight: 300;
-    font-family: Arial,sans-serif,helvetica;
-}
-
-/* CHATS STYLING  */
-
-section#direct-chats-container{
-    margin-top: 53px;
-}
-
-article.chat-single{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    padding: 0 16px;
-}
-
-article.chat-single .profile-img{
-    width: 56px;
-    height: 56px;
-    background-image: url(../img/people.png);
-    background-size: 55px;
-    border-radius: 50%;
-}
-
-.chat-id-msg h3{
-    font-size: .9rem;
-    font-weight: normal;
-}
-
-.chat-id-msg p{
-    color: #8e8e8e;
-    font-size: .8rem;
-}
-
-
-
 /* ################### */
 
 @media (min-width: 640px){
